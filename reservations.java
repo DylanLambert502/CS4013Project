@@ -144,6 +144,7 @@ public class reservations {
             }
         }
         //NOT fully finished more work on rooms types and rates for specific days needs to be done
+        //Currently calculates cost based on occupants for 1 day (Monday)
         this.cost=totalCost;
         return totalCost;
     }
