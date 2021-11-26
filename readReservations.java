@@ -13,7 +13,16 @@ public class readReservations {
 
             while((line = br.readLine()) !=null) {
                 String[] values = line.split(",");
-                System.out.println(values[0]);
+                System.out.println("The list of names are: " +values[0]);
+                System.out.println("The list of Number are: " +values[1]);
+                System.out.println("The list of Type are: " +values[2]);
+                System.out.println("The list of CheckIn are: " +values[3]);
+                System.out.println("The list of CheckOut are: " +values[4]);
+                System.out.println("The list of AmtOFRooms are: " +values[5]);
+                System.out.println("The list of Roomtype are: " +values[6]);
+                System.out.println("The list of Occupancy are: " +values[7]);
+                System.out.println("The list of Total are: " +values[8]);
+
             }
 
         } catch (FileNotFoundException e) {
@@ -32,7 +41,17 @@ CheckOut,	values[4]
 AmtOFRooms,	values[5]
 Roomtype,	values[6]
 Occupancy,	values[7]
-Total,      values[9]
+TotalCost,      values[8]
 
+
+    for( int i=0 , i < valueOf.values[6] , i++ ){
+    if (values[6].equalTo(DD)) {
+    -called room class -
+    DD[0] = DD [0]-1
+    } else if (values[6].equalTo(DT)) {
+    -called room class -
+    DT[0] = DT [0]-1
+    }
+    }
  */
 
