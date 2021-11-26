@@ -1,6 +1,11 @@
 # CS4013Project
 Group project for CS4013 OOP
 
+26-nov
+-Focused on read reservations
+-Works, just need to write the loops to store each set of information eg
+
+
 15-11-21
 *Started work on the writereservations file
 
