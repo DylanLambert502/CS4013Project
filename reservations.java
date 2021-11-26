@@ -150,9 +150,11 @@ public class reservations {
     /**
      * @return
      */
+
     public void setRooms(String[][] rooms) {
         this.rooms = rooms;
     }
+
     /**
      * Sets the cost of the room(s)
      *
