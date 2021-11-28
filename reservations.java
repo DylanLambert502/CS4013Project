@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
  */
 
 public class reservations {
+
     private int reservationNumber;
     private String reservationName;
     private char reservationType; // S: Standard purchase , A: Advanced purchase
@@ -78,7 +79,7 @@ public class reservations {
      *
      * @return number that identifies the reservation
      */
-    public int getReservationNumber() {
+    public static int getReservationNumber() {
         return reservationNumber;
     }
 
@@ -87,7 +88,7 @@ public class reservations {
      *
      * @return name on the reservation
      */
-    public String getReservationName() {
+    public static String getReservationName() {
         return reservationName;
     }
 
@@ -96,7 +97,7 @@ public class reservations {
      *
      * @return reservation type
      */
-    public char getReservationType() {
+    public static char getReservationType() {
         return reservationType;
     }
 
@@ -105,7 +106,7 @@ public class reservations {
      *
      * @return date of check in
      */
-    public LocalDate getCheckInDate() {
+    public static LocalDate getCheckInDate() {
         return checkInDate;
     }
 
@@ -114,7 +115,7 @@ public class reservations {
      *
      * @return date of check out
      */
-    public LocalDate getCheckOutDate() {
+    public static LocalDate getCheckOutDate() {
         return checkOutDate;
     }
 
@@ -127,7 +128,7 @@ public class reservations {
      *
      * @return the number of rooms reserved
      */
-    public int getNumberOfRooms() {
+    public static int getNumberOfRooms() {
         return numberOfRooms;
     }
 
@@ -185,7 +186,7 @@ public class reservations {
      * METHOD to calculate total cost of the stay
      * @return the total cost of the booked stay
      */
-    public double totalCost() {
+    public static double totalCost() {
         double totalCost = 0;
         room obj = new room();
 
