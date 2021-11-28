@@ -4,6 +4,7 @@ Group project for CS4013 OOP
 28- nov
 
 -Finished readresverations and mostlyt finished write reservations, couple of the same errors just need to figure out whats wrong
+
 26-nov
 -Focused on read reservations
 -Works, just need to write the loops to store each set of information eg
