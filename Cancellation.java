@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Arrays;
 
 /**
  * This class handles cancellations operations of
@@ -63,9 +64,11 @@ public class Cancellation{
    */
   public double getRefundAmount() {
     if (amountMustBeRefunded()) {
-      return getCost();
+      refundAmount = getCost();
+      return refundAmount;
     } else {
-      return 0.0;
+      refundAmount = 0.0;
+      return refundAmount;
     }
   }
   /**
@@ -76,14 +79,21 @@ public class Cancellation{
     return reservation;
   }
 
-// toString goes here
+ @Override
+ public String toString(){
+   String cancellationToString = "Cancelled reservation number:\t" + reservation.getReservationNumber() + "\n" +
+           "Refund amount:\t" + refundAmount + "\n" +
+           "Date of cancellation:\t" + cancellationDate.toString() + "\n";
+   return cancellationToString;
+
+ }
 
   /**
    * Checks if cancelled reservation is eligible for refund.
    * @return - true if cancellation can be refunded - false if not.
    */
   private boolean amountMustBeRefunded(){
-    if(reservation.getReservationType() == 's'){
+    if(reservation.getReservationType() == 'S'){
       if(reservation.getCheckInDate().minusDays(2).isAfter(cancellationDate)){
         return true;
       }
