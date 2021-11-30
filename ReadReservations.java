@@ -8,6 +8,7 @@ import java.util.List;
 
 
 public class ReadReservations {
+
     public static void readReservations() {
         String path = "reservations.csv";
         String line = "";

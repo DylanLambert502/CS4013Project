@@ -15,13 +15,14 @@ public class TextMenu {
                     "1.) Create a reservation\n" +
                     "2.) View reservations\n" +
                     "3.) Test reservation creation\n" +
-                    "4.) Exit\n");
+                    "4.) Cancel reservation\n" +
+                    "5.) Exit\n");
 
             choice = input.nextInt();
 
             switch (choice) {
                 case 1:
-                    UserReservation.creatRes();
+                    UserReservation.creatRes(false);
                     break;
                 case 2:
                     ReadReservations.displayReservations();
@@ -30,6 +31,10 @@ public class TextMenu {
                     ReservationTesting.testReservation();
                     break;
                 case 4:
+                    Reservation reservation = UserReservation.creatRes(true);
+                    Cancellation cancel = new Cancellation(reservation);
+                    System.out.println("Refund Amount: " + cancel.getRefundAmount());
+                case 5:
                     System.exit(0);
                 default:
                     System.out.println("Invalid selection");

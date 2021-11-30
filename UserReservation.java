@@ -10,7 +10,7 @@ public class UserReservation {
     /**
      * Method to create a reservation
      */
-    public static void creatRes() {
+    public static Reservation creatRes(boolean cancelation) {
 
         Scanner inOut = new Scanner(System.in);
         Reservation newRes = new Reservation();
@@ -74,9 +74,15 @@ public class UserReservation {
 
         newRes.setRooms(userRooms);
         newRes.setDates();
-        newRes.totalCost();
+        if(cancelation && resT == 'S'){
+            newRes.setCost(0.0);
+        } else {
+            newRes.totalCost();
+        }
         newRes.setReservationNumber(ReadReservations.numberOfReservation());
         System.out.println(newRes.toString());
         WriteReservations.writeReservations(newRes);
+        return newRes;
     }
+
 }
