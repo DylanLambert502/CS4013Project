@@ -33,6 +33,11 @@ public class ReservationTesting {
         testRes.totalCost();
         System.out.println(testRes.toString());
         WriteReservations.writeReservations(testRes);
-
+        
+        Cancellation cancel = new Cancellation(testRes);
+        cancel.getReservation();
+        cancel.getRefundAmount();
+        System.out.println(cancel.toString());
+        System.out.println("End of Test");
     }
 }
