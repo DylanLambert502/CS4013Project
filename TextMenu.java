@@ -34,6 +34,7 @@ public class TextMenu {
                     Reservation reservation = UserReservation.creatRes(true);
                     Cancellation cancel = new Cancellation(reservation);
                     System.out.println("Refund Amount: " + cancel.getRefundAmount());
+                    break;
                 case 5:
                     System.exit(0);
                 default:
