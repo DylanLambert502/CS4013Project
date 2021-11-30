@@ -83,6 +83,9 @@ public class ReadReservations {
         System.out.println(records.get(i)+"\n");
         }
     }
+    /**
+    *@author Dylan Lambert
+    */
     public static int numberOfReservation(){
         List<List<String>> records = new ArrayList<>();
         try(BufferedReader dbr = new BufferedReader(new FileReader("reservations.csv"))){
