@@ -43,9 +43,9 @@ public class WriteReservations {
             pw.flush();
             pw.close();
 
-            JOptionPane.showMessageDialog(null, "reservation saved");
+           System.out.println("reservation saved");
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "reservation not saved");
+            System.out.println("Reservation not saved");
         }
     }
 }
