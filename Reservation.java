@@ -414,7 +414,7 @@ public class Reservation {
                 "Check out date\t:\t" + checkOutDate + "\n" +
                 "Number of rooms\t:\t" + numberOfRooms + "\n" +
                 "Rooms booked\t:\t" + rooms + "\n" +
-                "Total cost\t\t:\t" + cost + "\n";
+                "Total cost\t:\t" + cost + "\n";
         return reservationToString;
     }
 }
