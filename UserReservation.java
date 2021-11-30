@@ -20,16 +20,16 @@ public class UserReservation {
         newRes.setReservationName(resName);
 
         System.out.println("Check in date:\t");
-        int cInYear = inOut.nextInt();
-        int cInMonth = inOut.nextInt();
         int cInDay = inOut.nextInt();
+        int cInMonth = inOut.nextInt();
+        int cInYear = inOut.nextInt();
         LocalDate cIn = LocalDate.of(cInYear, cInMonth, cInDay);
         newRes.setCheckInDate(cIn);
 
         System.out.println("Check out date:\t");
-        int cOutYear = inOut.nextInt();
-        int cOutMonth = inOut.nextInt();
         int cOutDay = inOut.nextInt();
+        int cOutMonth = inOut.nextInt();
+        int cOutYear = inOut.nextInt();
         LocalDate cOut = LocalDate.of(cOutYear, cOutMonth, cOutDay);
         newRes.setCheckOutDate(cOut);
 
